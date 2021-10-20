@@ -14,21 +14,20 @@ class MaterialManager:
         match material:
             case materialType.Titanium:
                 self.carManager.setMaterial(materialType.Titanium)
-                returnText = f"{textBaseForValidMaterial} Titanium."
+                returnText = textBaseForValidMaterial + " Titanium."
 
             case materialType.Carbon:
                 self.carManager.setMaterial(materialType.Carbon)
-                returnText = f"{textBaseForValidMaterial} Carbon."
+                returnText = textBaseForValidMaterial + " Carbon."
 
             case materialType.AlloyX:
                 self.carManager.setMaterial(materialType.AlloyX)
-                returnText = f"{textBaseForValidMaterial} AlloyX."
+                returnText = textBaseForValidMaterial + " AlloyX."
 
             case _:
                 returnText = "Material selection is invalid."
 
         return self._announceMaterial(returnText)
-
 
 
 
